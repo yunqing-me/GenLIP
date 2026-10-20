@@ -56,9 +56,9 @@ Each training YAML follows a three-section structure:
 
 > **Note:** Remember to update `model.config_path`, dataset paths in `data.train_path`, and `train.output_dir` before launching training.
 
-### Using Qwen3-0.6B as Backbone
+### Using Qwen3-0.6B as a Backbone
 
-When training the Qwen3-0.6B model with our method, it is recommended to train from scratch (i.e., do not set `pretrained_weights` in the model config file). Both Qwen/Qwen3-0.6B-Base and Qwen/Qwen3-0.6B initialization leads to inferior performance than from scratch. (Interestingly, our pre-training results suggest that strong language priors do not necessarily translate into stronger visual representations.)
+When training the Qwen3-0.6B model with our method, it is recommended to train from scratch (i.e., do not set `pretrained_weights` in the model config file). Initializing from either Qwen/Qwen3-0.6B-Base or Qwen/Qwen3-0.6B leads to worse performance than training from scratch. (Interestingly, our pre-training results suggest that strong language priors do not necessarily translate into stronger visual representations.)
 
 Based on our experiments, pretraining Qwen3-0.6B from scratch achieves results comparable to the ViT-SO400M model.
 

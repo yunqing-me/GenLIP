@@ -119,7 +119,7 @@ We provide three model configurations in `configs/model_configs/genlip/`:
 - `genlip_so16_224.json`
 - `genlip_g16_224.json`
 
-Along with corresponding training configurations in `configs/pretrain/genlip/`:
+The corresponding training configurations are in `configs/pretrain/genlip/`:
 - `stage1/train_genlip_*_recap.yaml`
 - `stage2/train_genlip_*_navit.yaml`
 
